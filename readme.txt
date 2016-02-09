@@ -137,3 +137,24 @@ This is the old edit
 ========
 This is the new edit
 >>>>>>>>
+
+Strategies to check and manage git.
+
+git branch
+Better use than git status at times as it lists all open branches.
+
+git branch --merged
+Returns what branches were merged which allows you to surmise if all work is committed and in the master branch.
+
+git branch --no-merge
+Returns what branches were not merged in the workflow.
+
+git branch -d branchname
+deletes the branch that was checkout for developement. It is a good idea to remove (or prune) as it were dead branches... ones that serve no purpose to the developemtent state as they take up memory space and add to the confusion. 
+
+In cases where branches have uncommited or merged changes git will warn the user of the potential loss of data.
+
+git branch -D branchname
+In case where the users are CERTAIN that any lost data isn't revelavent to the trunk -D supeceeds the warnings and goes head with the changes.
+
+
