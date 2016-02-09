@@ -126,4 +126,14 @@ git merge bugfix
 When merging a file that had different states git brings in the bug fix changes recursively, which means that the changes that were instated through the previous branch addfonts should merge well with the new lines and files of the bugfix branch into the master branch as no elements, lines or files edited in the original branches and trunk (master) conflict.
 
 
+When conflicts happen.
 
+When merging branch and master workflows it is innevitable that certain edits will conflict.  When these edits are simple one can attempt to merge a branch into master from the master branch and Git will annonce specific warning flags.
+
+When the warning flags appear git uses comment codes to indicate where these conflicts arise.  
+
+>>>>>>>>HEAD
+This is the old edit
+========
+This is the new edit
+>>>>>>>>
