@@ -73,6 +73,35 @@ git commit
 
 Commits all your files and sends you into VIM editor in order to comment on you commit. In PC/WIN flavor the commit text is handled by note pad.
 
+git commit -m "Add a message here"
+
+Git like most programs have a parameter flags like most applications which is symbolised by dash  -m represents add message to commit and it's parameter in text in the brackets/quotes.
+
+Modified files.
+
+Modified files will show up as modified in status.
+
+An environment note - Windows PC git seems to state on the prompt shorthand status such as the following :
+
+D:\dev_web\repos\git-basics [master +0 ~2 -0]>
+
+The information above found between the brackets are the repository time [master], the code listed are shortforms for new/added [  +  ] and ammount, shortform for modified [  ~  ] and amount, shortform for staging or missing [  -  ] and number.
+Cheking differences.
+
+In cases where you are working in teams or cannot r
+emember the satus of your project and must verify the changed files you can compare states for these files.
+
+git diff
+
+This command demonstrates 'unstaged' files, that is those in the process of being edited and not added to the local workflow or staged.  Once add(ed) they become staged and ready to commit. But to find the differences between staged versions of files git diff must have additional arguments.
+
+git diff --staged
+
+Shows the differences in the staged versions of the files.
+
+
+
+
 
 
 
