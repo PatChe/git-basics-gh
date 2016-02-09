@@ -100,6 +100,9 @@ git diff --staged
 Shows the differences in the staged versions of the files.
 
 
+Advanced concepts
+
+Git Branching.  Allows you to create conccurant developements as your workflow evolves. It begins with the main trunk or master and all changes can branch away from the project for testing purposes. Braches can even be spawned from another branch.  Example.  Branching a website trunck to test the insertion of an image gallery, during it's developement a bug fix is needed on the sit so another branch is created the bug is fixed and re-commited to the site.  Following that commit the gallery is finished and it to is merged in the site.  How this occurs depends on each branches dependencies.
 
 
 
