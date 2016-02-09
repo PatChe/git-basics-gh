@@ -119,7 +119,11 @@ Without an expression gives you a list of all branches.
 
 Now... this is freaky.  Once you add and edit files git controlled directories begin to be dynamic entities as it were.  If one is working on the MASTER branch and switches to work on a repo of the master branch it is VERY important to specify it in GIT otherwise files and data may be missing (or invisible) in the file directory structure.  Switching branches essentially removes and restores file references in the folder.  It is therefore important to KNOW which environment one is working in and it is IMPORTANT not to leave files open which could cause conflicts.
 
+Merging branches that differ from original master.
 
+git merge bugfix
+
+When merging a file that had different states git brings in the bug fix changes recursively, which means that the changes that were instated through the previous branch addfonts should merge well with the new lines and files of the bugfix branch into the master branch as no elements, lines or files edited in the original branches and trunk (master) conflict.
 
 
 
