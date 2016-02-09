@@ -117,6 +117,8 @@ git branch
 
 Without an expression gives you a list of all branches.
 
+Now... this is freaky.  Once you add and edit files git controlled directories begin to be dynamic entities as it were.  If one is working on the MASTER branch and switches to work on a repo of the master branch it is VERY important to specify it in GIT otherwise files and data may be missing (or invisible) in the file directory structure.  Switching branches essentially removes and restores file references in the folder.  It is therefore important to KNOW which environment one is working in and it is IMPORTANT not to leave files open which could cause conflicts.
+
 
 
 
